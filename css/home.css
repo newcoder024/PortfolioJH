@@ -45,6 +45,7 @@
     transition: 1s;
 }#about-btn:hover{
     filter: drop-shadow(0px 0px 10px #62FFD3);
+    transition: 0.2s ease-in-out;
 }
 
 .home-paragraph{
