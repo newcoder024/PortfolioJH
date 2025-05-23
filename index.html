@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio JH</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="img/logo-icon.png" type="afbeelding/icoontype">
+</head>
+<body>
+    <div class="background-container">
+        <div id="left-circle"></div>
+        <div id="right-circle"></div>
+    </div>
+
+    <header>
+        <a href="index.html" id="logo"><img src="img/logo-icon.png" alt="JH" class="logo-icon">JH</a>
+        <nav>
+            <ul class="nav-links side-bar">
+                <li class="close-button" onclick=closeSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#Home-page"><span class="code-style" style="font-size: 15px;">01. </span>Home</a></li>
+                <li><a href="#About"><span class="code-style" style="font-size: 15px;">02. </span>About me</a></li>
+                <li><a href="#projects"><span class="code-style" style="font-size: 15px;">03. </span>Projects</a></li>
+                <li><a href="#contact"><span class="code-style" style="font-size: 15px;">04. </span>Contact</a></li>
+            </ul>
+            <ul class="nav-links">
+                <li><a href="#Home-page" class="hideOnMobile"><span class="code-style" style="font-size: 15px;">01. </span>Home</a></li>
+                <li><a href="#About" class="hideOnMobile"><span class="code-style" style="font-size: 15px;">02. </span>About me</a></li>
+                <li><a href="#projects" class="hideOnMobile"><span class="code-style" style="font-size: 15px;">03. </span>Projects</a></li>
+                <li><a href="#contact" class="hideOnMobile"><span class="code-style" style="font-size: 15px;">04. </span>Contact</a></li>
+                <li class="menu-button" onclick=openSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="front-page" id="Home-page">
+            <div class="text-container">
+                <h1>Web developer & student</h1>
+                
+                <article class="home-paragraph">
+                    <p>I am a software development student in The Netherlands, 
+                        South Holland. I like to create dynamic and user friendly 
+                        websites. I enjoy turning ideas into functional solutions 
+                        and am always eager to learn and grow in the tech world.</p>
+                </article>
+                <button id="about-btn" onclick="moreBtn()">More about me</button>
+            </div>
+            <img src="img/coding-img.jpg" alt="">
+        </section>
+    
+        <section id="About" class="hidden">
+            <section id="me-container">
+                <article class="coded-background">
+                    <section id="About-me" class="hidden"> 
+
+                        <h1 style="font-size: 3rem;">About</h1><br>
+                        <p>Hi, my name is Julia Heemskerk and I'm currently a student pursuing 
+                            a degree in software development in The Netherlands. I've worked 
+                            with HTML, Css and JavaScript, and am passionate about learning 
+                            new languages and frameworks to become a better coder.
+                        </p><br>
+                        <h4 class="code-tab">> experience</h4>
+                        <section class="exp-apps">
+                            <div class="apps-xp">
+                                <img src="img/html-5.png" alt="Html" class="exp-icons" id="html-icon">
+                                <div class="progress-bar">
+                                <div class="progress" style="height:15px;width:75%"></div></div>
+                                <p>75%</p>
+                                </div>
+                            </div>
+                            <div class="apps-xp">
+                                <img src="img/css.png" alt="Css" class="exp-icons" id="css-icon">
+                                <div class="progress-bar">
+                                <div class="progress" style="height:15px;width:75%"></div></div>
+                                <p>75%</p>
+                                </div>
+                            </div>
+                            <div class="apps-xp">
+                                <img src="img/js.png" alt="JavaScript" class="exp-icons" id="js-icon">
+                                <div class="progress-bar">
+                                <div class="progress" style="height:15px;width:40%"></div></div>
+                                <p>40%</p>
+                                </div>
+                            </div>
+                            <!-- <div class="apps-xp">
+                                <img src="img/php.png" alt="php" class="exp-icons" id="php-icon">
+                                <div class="progress-bar">
+                                <div class="progress" style="height:15px;width:40%"></div></div>
+                                <p>40%</p>
+                                </div>
+                            </div> -->
+                            <div class="apps-xp">
+                                <img src="img/figma.png" alt="Figma" class="exp-icons" id="figma-icon">
+                                <div class="progress-bar">
+                                <div class="progress" style="height:15px;width:80%"></div></div>
+                                <p>80%</p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                    </section>  
+                </article><br><br>
+                <button id="project-btn" onclick="moveToProjects()"><a>Ready to see my work?</a></button>
+            </section>
+        </section>
+        </section><br>
+    
+        <section id="projects">
+            <h2><span class="code-style hidden" style="filter: none; font-size: 25px;">03.</span>Featured projects</h2>
+            <article class="coded-background project-element hidden">
+                <h4 class="code-tab">Yendor-project<span style="color: grey; float: right; cursor: default;">—  ▢  x</span></h4><hr style="opacity: 0.3;">
+    
+                <section class="project-tab">
+                    <div class="project-img"><img src="img/capybara-go.png" alt="project name"></div>
+                    <article class="project-desc">
+                        <h3>Capybara Go! Platform game</h3>
+                        <p>We had a 'project week' at school, in which we were 
+                            tasked with the assignment: make a game. Our group 
+                            decided on a sort 2d platforming game, with inspiration 
+                            taken from games like Mario Bro's and Hollow Knight. 
+                            It was a fun project, I especially had fun designing 
+                            the characters and seeing the game come to life.</p>
+                        <article class="code-used">
+                            <p>Html canvas</p>
+                            <p>Css</p>
+                            <p>JavaScript</p>
+                            <p>Design and art</p>
+                        </article>
+                        <article class="outside-links">
+                            <a href="https://github.com/JoaSwart/capybarago-projectweek" target="_blank">Take a closer look <span class="icon"></span></a>
+                        </article>
+                    </article>    
+                </section>
+            </article>
+    
+            <article class="coded-background project-element hidden">
+                <h4 class="code-tab">annoying-input<span style="color: grey; float: right; cursor: default;">—  ▢  x</span></h4><hr style="opacity: 0.3;">
+    
+                <section class="project-tab"> <!-- fake projects, real projects go in place -->
+                    <div class="project-img"><img src="img/an-input.png" alt="project name"></div>
+                    <article class="project-desc">
+                        <h3>Annoying input assignment</h3>
+                        <p>We got the assigmment to make the most annoying input every, 
+                            with different kinds of sounds, an input thhat jumps away when 
+                            you hover etc. It was fun playing with trying to make it as 
+                            annoying as possible and trying to figure out how to make it work.</p>
+                        <article class="code-used">
+                            <p>HTML</p>
+                            <p>JavaScript</p>
+                        </article>
+                        <article class="outside-links">
+                            <a href="https://github.com/newcoder024/annoying-input" target="_blank">Take a closer look <span class="icon"></span></a>
+                        </article>
+                    </article>    
+                </section>
+            </article>
+    
+            <article class="coded-background project-element hidden">
+                <h4>simple-calculator<span style="color: grey; float: right; cursor: default;">—  ▢  x</span></h4><hr style="opacity: 0.3;">
+    
+                <section class="project-tab">
+                    <div class="project-img"><img src="img/calculator.png" alt="project name"></div>
+                    <article class="project-desc">
+                        <h3>Simple working calculator</h3>
+                        <p>One of my first times using JavaScript. We had to make a working calculator with HTML, CSS and a small bit of JavaScript.</p>
+                        <article class="code-used">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>design</p>
+                        </article>
+                        <article class="outside-links">
+                            <a href="https://github.com/newcoder024/Calculator-1st-try" target="_blank">Take a closer look <span class="icon"></span></a>
+                        </article>
+                    </article>    
+                </section>
+            </article>
+            
+            <!-- <h2 style="font-size: 30px;">What I'm currently working on:</h2>
+            <section id="wip-section" class="hidden">
+                <article class="wip-tab coded-background">
+                    <h4>Wordle-game</h4><hr style="opacity: 0.3;">
+                    <div class="wip-photo">
+                        <img src="img/wordle-game.png" alt="">
+                    </div>
+                    <div class="wip-inhoud">
+                        <h3>Wordle</h3>
+                        <p>I'm trying my luck at JavaScript by trying to re-create a wordle 
+                            game. I've been addicted to playing this game, so I thought: 
+                            why not code it myself?</p>
+                    </div>
+                    <a href="https://github.com/newcoder024/Wordle-game" class="wip-external" target="_blank"></a>
+                </article>
+                <article class="wip-tab coded-background">
+                    <h4>bug-catch</h4><hr style="opacity: 0.3;">
+                    <div class="wip-photo">
+                        <img src="img/bug-game.png" alt="">
+                    </div>
+                    <div class="wip-inhoud">
+                        <h3>Catch the bug</h3>
+                        <p>I'm going more in depth on learning 
+                            JavaScript by making a where you can catch bugs that run away 
+                            in random directions.</p>
+                    </div>
+                    <a href="https://github.com/newcoder024/Bug-game" class="wip-external" target="_blank"></a>
+                </article>
+            </section>
+        </section> -->
+    
+        <section id="contact" class="hidden">
+            <h2><span class="code-style" style="filter: none; font-size: 25px;">04.</span> Want to get in touch?</h2>
+            
+            <section class="coded-background contact-bg">
+                <h4>contact<span style="color: grey; float: right; cursor: default;">—  ▢  x</span></h4><hr style="opacity: 0.3;">
+    
+                <article id="contact-container">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="name-email">
+                            <input type="hidden" name="access_key" value="c68f7cc5-ceb0-47fc-a5ec-bf60829a7bd3">
+
+                            <div class="input-group">
+                                <label for="name">> Name:</label>
+                                <input type="text" name="name" id="name" size="30px" required placeholder="Name:">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">> Email:</label>
+                                <input type="email" name="email" id="email" size="30px" required placeholder="abc@email.com"><br>        
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="subject">> Subject:</label>
+                            <input type="text" id="subject" size="50px" required placeholder="Subject of message:"><br>    
+                        </div>
+                        <div class="input-group">
+                            <label for="message">> Message:</label>
+                            <textarea name="message" id="message" rows="60" required placeholder="Your message:"></textarea>                
+                        </div><br>
+                        <div class="contact-btn">
+                            <button type="submit" class="submit-contact">Get in contact</button>
+                        </div>
+                    </form>    
+                </article>
+            </section>
+            <section class="scroll-btn">
+                <button id="top-btn"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#FFFFF"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg></button>
+            </section><br>
+        </section>
+    </main>
+    
+
+    <footer>
+        <article id="footer-container">
+            <section class="footer-logo">
+                <a href="#Home-page"><img src="img/logo-icon.png" alt="JH"></a>
+                <p>© 2024 JH. All Rights Reserved.</p>
+            </section>
+            <div class="vl"></div>
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#About">About me</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="vl"></div>
+            <section id="footer-social">
+                <a href=""><img src="img/linkedin-logo.png" alt=""></a>
+                <a href="https://github.com/newcoder024" target="_blank"><img src="img/github-logo.png" alt=""></a>
+            </section>
+        </article>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
