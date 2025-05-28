@@ -115,6 +115,7 @@
 
 #About{
     display: flex;
+    scroll-behavior: smooth;
     height: 100vh;
     gap: 20px;
     justify-content: center;
@@ -339,6 +340,7 @@
 
 #projects{
     scroll-margin-top: 100px; /* laat altijd 100px boven deze section terwijl je aan t scrollen ben */
+    scroll-behavior: smooth;
     margin: 5vh auto;
     max-width: 80%;
     display: flex;
