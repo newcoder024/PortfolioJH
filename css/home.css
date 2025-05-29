@@ -111,6 +111,10 @@
     }
     .front-page{
         margin-bottom: 20vh;
+        margin-top: 20vh;
+    }
+    .home-paragraph{
+        font-size: 1.2rem;
     }
 }
 
@@ -296,9 +300,11 @@
         max-width: 80vw;
         grid-template-columns: 1fr;
     }
-
     #project-btn{
         width: 60vw;
+    }
+    #About{
+        margin-top: 15vh;
     }
 }
 @media screen and (max-width: 450px){
@@ -314,6 +320,7 @@
     }
     #About{
         margin-bottom: 40vh;
+        margin-top: 20vh;
     }
     .project-element h4 span{
         display: none;
@@ -322,7 +329,7 @@
         height: 10vh;
     }
     .progress-bar{
-        width: 110px;
+        width: 80px;
     }
     .coded-background{
         max-height: 950px;
